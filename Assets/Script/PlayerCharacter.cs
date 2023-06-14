@@ -24,6 +24,15 @@ public class PlayerCharacter : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        
+        //if the player presses the Spacebar...
+       
+        {   
+            if(Input.GetKeyDown(KeyCode.Space)){
+                
+            Debug.Log("TOm has hit the Spacebar");
+            Level++;
+            }
+        }
+       
     }
 }
