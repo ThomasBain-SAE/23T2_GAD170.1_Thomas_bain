@@ -29,7 +29,7 @@ public class PlayerCharacter : MonoBehaviour
         {   
             if(Input.GetKeyDown(KeyCode.Space)){
                 
-            Debug.Log("TOm has hit the Spacebar");
+            Debug.Log("An attack has been made");
             Level++;
             }
         }
