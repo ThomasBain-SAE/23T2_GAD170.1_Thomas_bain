@@ -268,6 +268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f1c65e383bd881448620a41a73653a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseHealth: 50
+  currentHealth: 0
+  experienceReward: 50
+  enemyLevel: 1
 --- !u!212 &549368762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -453,6 +457,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188742182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188742184}
+  - component: {fileID: 1188742183}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1188742183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188742182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852c75cd87fc7e346bd37e467f9e4065, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 549368760}
+--- !u!4 &1188742184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188742182}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.2480993, y: -2.8674889, z: -0.08041376}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2016125204
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,9 +534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d247864d7bfd74ea40ebd095950adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack: 10
-  Health: 100
-  Level: 1
+  maxHealth: 100
+  currentHealth: 0
+  baseAttack: 10
 --- !u!136 &2016125206
 CapsuleCollider:
   m_ObjectHideFlags: 0
